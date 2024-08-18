@@ -1,1 +1,5 @@
 # Signals
+I focused on generating single tones and creating a song using piano key frequencies. Each piano key or note, corresponds to a specific frequency. When a key is pressed, a sinusoidal tone with a certain frequency is generated over a defined period , starting from a certain time. This tone is described by a sinusoidal equation with a unit step function that defines the playing interval. 
+To generate my song, I used pairs of notes chosen from the 3rd and 4th piano octaves, assuming that both hands are playing these notes simultaneously-left hand for the 3rd octave and right hand for the 4th octave. I combined these tones to create a final song signal.
+For plotting, I visualized my signal in the time domain using a graph. The time separation between notes varied according to the chosen parameters. The plot showed how each note's frequency and duration influenced the overall waveform.
+Finally, I played my song using the sd.play function from the sounddevice library, with a sample rate of 3×10^4 Hz. This allowed me to hear the composed signal as audio, which was generated based on my defined frequencies and intervals.
